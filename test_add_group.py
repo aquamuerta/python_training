@@ -11,10 +11,6 @@ def app(request):
         return fixture
 
 
-def setUp(self):
-        self.app = Application
-
-
 def test_add_group(app):
         app.open_home_page()
         app.login("admin", "secret")
