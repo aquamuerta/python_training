@@ -1,7 +1,8 @@
 from selenium import webdriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
-from model.contact import ContactHelper
+from fixture.contact import ContactHelper
+
 
 class Application:
     def __init__(self):

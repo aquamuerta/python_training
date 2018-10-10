@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from contact import Contact
+from model.contact import Contact
 
 
 def test_add_contact(app):
