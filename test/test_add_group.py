@@ -3,7 +3,6 @@
 from model.group import Group
 
 
-
 def test_add_group(app):
         app.open_home_page()
         app.session.login("admin", "secret")
