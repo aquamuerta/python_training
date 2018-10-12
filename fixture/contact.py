@@ -32,8 +32,8 @@ class ContactHelper:
             wd.find_element_by_link_text("home page").click()
 
     def return_to_home(self):
-        wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+            wd = self.app.wd
+            wd.find_element_by_link_text("home").click()
 
     def modify_first_contact (self, new_contact_data):
             wd = self.app.wd
@@ -53,6 +53,6 @@ class ContactHelper:
             wd.switch_to_alert().accept()
 
     def select_first_contact(self):
-        wd = self.app.wd
-        # select first contact
-        wd.find_element_by_name("selected[]").click()
+            wd = self.app.wd
+            # select first contact
+            wd.find_element_by_name("selected[]").click()
