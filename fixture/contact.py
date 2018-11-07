@@ -1,5 +1,6 @@
 from model.contact import Contact
 
+
 class ContactHelper:
 
     def __init__(self, app):
@@ -67,10 +68,13 @@ class ContactHelper:
         wd = self.app.wd
         contacts = []
         for element in wd.find_elements_by_name("entry"):
-            text = element.text
+            text = element.find_elements_by_tag_name("td")
+            lastname = text[1].text
+            name = text[2].text
             id = element.find_element_by_name("selected[]").get_attribute("value")
-            contacts.append(Contact(lastname=text, id=id))
+            contacts.append(Contact(lastname=lastname, name=name, id=id))
         return contacts
+
 
 
 
